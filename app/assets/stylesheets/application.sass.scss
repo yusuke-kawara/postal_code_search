@@ -1,4 +1,7 @@
 // Entry point for your Sass build
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 .container {
   margin-top: 50px;
   text-align: center;
@@ -10,4 +13,18 @@
   font-size: 16px;
   border-radius: 3px;
   border: 2px solid #ddd;
+}
+
+.test {
+  text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+    color: #ffe86e; /* 文字色 */
+    text-shadow: 
+      2px 2px 0 #777, /* 影の効果で岩っぽさを出す */
+      -1px -1px 0 #777, 
+      1px -1px 0 #777, 
+      -1px 1px 0 #777,
+      1px 1px 0 #777;
+    letter-spacing: 2px; /* 文字間隔 */
 }
